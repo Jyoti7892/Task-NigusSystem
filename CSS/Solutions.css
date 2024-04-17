@@ -20,7 +20,6 @@ body{
 .section2
 {
     height: 110%;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
 
@@ -69,24 +68,43 @@ body{
 
 
 
-@media (max-width:540) {
+@media screen and (max-width:426px) {
     .section{
-        display: none;
-        position: absolute;
-        height: 120px;
+        display: block;
 
         }
-        .info{
-            width: 10%;
-            padding: 30px 50px;
-            font-size: 0.5rem;
+
+        .section h1
+        {
+            font-size: 1.2rem;
         }
         .heading img{
             padding: 20px 30px;
         }
+        .info {
+            width: 100%;
+            padding: 5px 5px;
+        }
+        .info p{
+            width: 100%;
+            font-size: 1rem;
+        }
         .right{
             position: absolute;
             
+        }
+
+        .section2 {
+            height: unset;
+            display: block;
+        }
+
+        .div1, .div2 {
+           padding: 10px;
+            width: 100%;
+        }
+        .right1{
+            padding: 10px;
         }
 
 

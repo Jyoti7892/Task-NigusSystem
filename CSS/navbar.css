@@ -34,6 +34,9 @@ nav{
     width: 70vw;
     position: relative; background: #fff;
 }
+.navbar span{
+    display: none;
+}
 .open{
     display: inline-block;
 }
@@ -83,6 +86,9 @@ nav{
         padding: 0 20px;
         height: 60px;
     }
+    .navbar .open{
+        display: block;
+    }
    .close{
        display: none;
     position: absolute;
@@ -106,7 +112,7 @@ nav{
     position: absolute;
     top:-300px;
     /* top: -34px; */
-    left: -150px;
+    left: -100px;
     width: 100vw;
     transition: .5s;
  }
@@ -168,4 +174,25 @@ nav{
     box-shadow: 2px sandybrown;
     background-color: blue;
     border-radius: 4px;
+}
+
+
+@media screen and (max-width:426px) {
+.footer {
+    padding: 15px;
+    display: block;
+
+}
+.contact{
+    height: unset;
+    width: unset;
+    padding: 10px;
+
+}
+.contact button{
+height: 30px;
+width: 90px;
+margin: 5px;
+cursor: pointer;
+}
 }
