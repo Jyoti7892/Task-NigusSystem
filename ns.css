@@ -1,0 +1,135 @@
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* -------Section---- */
+.section{
+    display: flex;
+    align-items: center;
+}
+.sub-section{
+    padding: 10px 20px;
+}
+.section img{
+    height: 50%;
+    width: 50%;
+}
+
+.Partners{
+    margin-left: 5vw;
+    width: inherit;
+    height: 40%;
+    text-align: center;
+    
+}
+ .main-box
+{
+    margin-top: 20px;
+    display: flex;
+   width: 80vw;
+
+    /* justify-content: space-evenly; */
+    gap: 40px;
+}
+
+.box
+{
+    
+   width: 250px;
+   height: 190px;
+    border-radius: 10px;
+    background-color:rgba(200, 219, 235, 0.337);
+   align-items: center;
+   
+} 
+.box h3{
+    padding: 20px 0px;
+}
+.images
+{
+background-color: aliceblue;
+border-radius: 40px;
+height: 170px;
+margin: auto;
+position: relative;
+width: 100%;
+padding: 5%;
+place-items: center;
+overflow: hidden;
+}
+
+.slide-img 
+{
+    height: 130px;
+    width: 18px;
+    display: flex;
+    width: calc(230px * 18);
+    animation: scroll 20s  linear infinite;
+
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(calc(-230px * 9));
+    }
+    
+}
+
+.block
+{
+    border: 1px solid red;
+    width: 800px;
+    
+
+}
+
+.section1
+{
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+
+.solution{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.devolopement
+{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1{
+    height: 15rem;
+    width: 20rem;
+    border-radius: 10px;
+    background-color:azure;
+    padding: 15px;
+    text-align: center;
+}
+.box1:hover{
+    background-color: darkslategray;
+    color: white;
+}
+ img{
+    height: 50%;
+    width: 70%;
+   
+
+}
+img:hover{
+    border-radius: 3px;
+    background-color: darkslategray ;
+}
+.lable{
+    font-weight: bold;
+    padding: 5px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* word-spacing: 10px; */
+}

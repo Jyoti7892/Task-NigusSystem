@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav{
+    padding: 10px 20px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+.navbar .logo{
+    width: 200px;
+    padding: 0 20px;
+    height: 90px;
+}
+.navbar .logo img {
+    width: 90%;
+    height: inherit;
+}
+.nav-list{
+    width: 70vw;
+    position: relative; background: #fff;
+}
+.open{
+    display: inline-block;
+}
+ .nav-list ul{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 10px;
+    padding-right: 10vw;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 50px;
+    background: #fff;
+ }
+.nav-list ul li a{
+    background: #fff;
+    text-decoration: none;
+    color:rgb(87, 102, 159) ;
+    transition: .5s;
+}
+.nav-list ul li a:hover{
+     color: rgb(0, 51, 255);
+ }
+ .first-nav ul li{
+    padding: 10px 2px;
+ }
+ 
+
+ .second-nav{
+    display: none;
+     position: absolute;
+     height: inherit;
+    }
+    .second-nav ul li{
+     background: #fff;
+    padding: 5px;
+    display: block;
+    font-size: 1.4rem;
+ }
+
+
+ @media screen and (max-width:900px) {
+    .navbar .logo{
+        width: 130px;
+        padding: 0 20px;
+        height: 60px;
+    }
+   .close{
+       display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav-list{
+    /* display: none; */
+    position: relative;
+}
+.nav-list ul{
+    /* background-color: #fff; */
+    display: block;
+    width: 100vw;
+    height: unset;
+ }
+ .first-nav{
+    position: absolute;
+    top:-300px;
+    /* top: -34px; */
+    left: -150px;
+    width: 100vw;
+    transition: .5s;
+ }
+
+.second-nav{
+    position: absolute;
+    top:-34px;
+    /* left: 150px; */
+}
+ }
+
+
+
+.footer
+{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+}
+.limited{
+    color:dimgray ;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+.logo1
+{
+    height: 50px;
+    width: 100px;
+    padding: 20px;
+    padding: 5px;
+}
+
+.icon{
+    height: 30px;
+    width: 35px;
+    padding: 5px 0;
+    
+}
+.help
+{
+    /* padding:5px; */
+    width: 30%;
+    color:dimgray ;
+    font-size: 1.1rem;
+    font-weight: normal;
+    
+}
+.contact{
+    height: 400px;
+    width: 900px;
+   text-align: center;
+   padding: 10% 10%;
+    /* background-color: #39c596a2; */
+}
+.btn{
+    height: 60px;
+    width: 100px;
+    box-shadow: 2px sandybrown;
+    background-color: blue;
+    border-radius: 4px;
+}
