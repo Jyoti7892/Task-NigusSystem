@@ -1,61 +1,19 @@
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-size: 1rem; */
-}
-body{
-    height: 100%;
-    width: 100%;
-}
-.navigation ul{
+.section{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background-color: black; */
-    border-radius: 5px;
+    padding: 0% 11%;
 }
-.navigation ul li{
-    list-style: none;
+.sub-div{
+    width:50%;
 }
-.navigation ul li img{
- 
-    height: 50px;
-
-}
-.navigation ul li a{
-    font-size: 25px;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    padding: 5px 0px;
-    display: block;
-}
-.navigation ul li a:hover{
-    background-color: rgba(243, 11, 49, 0.941);
-    width: 120%;
-    /*  */
-    border-radius: 13px;
-   text-decoration: underline;
-
-}
-#checkbtn{
-     float: right;
-     line-height: 80px;
-     /* margin-right: 10px; */
-     font-size: 30px;
-     display: none;
-     /* color: white; */
-}
-#check{
-    display: none;
+.sub-div h1{
+    font-size: 2.9rem;
+    padding: 2%;
 }
 
-
-@media (max-width:768) {
-    
-
+.sub-div p{
+    font-size: 1.2rem;
+    padding: 2%;
 }
-@media (max-width:1024) {
-    
+img{
+    height: 12%;
 }
-
-

@@ -5,67 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Industries.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <div class="container">
-        <div>
-                <ul class="nav">
-                    <li>  <a href="index.html"><img  class="logo" src="IMAGES/nigus-logo.png"></a></li>
-                    <li> <a href="index.html"> Services</a> </li>
-                    <li> <a href="Solutions.html">Solutions</a> </li>
-                    <li> <a href="Industries.html">Industries</a> </li>
-                    <li> <a href="#">About Us</a> </li>
-                    <li> <a href="#">Contact Us</a></li>
-                    <li> <a href="#" target="_blank">sales@nigussystem.com</a></li>
-                    <li> <a href="#">+91 9880698312</a></li>
-                    <button class="btn"> <a href="#"> Sales</a></button>
-                    <button class="btn"><a href="#"> Supports</a></button>
-                </ul>
+    <nav >
+        <div class="navbar">
+            <div class="logo">
+                <img src="IMAGES/nigus-logo.png" alt="">
             </div>
-        
-            <div>
-                <ul class="nav1">
-                    <li><a href="#">Web Development </a></li>
-                    <li><a href="#">Application Development</a></li>
-                    <li><a href="#">Software Development</a></li>
-                    <li><a href="#">Al/ML Development</a></li>
-                    <li><a href="#">System Development</a></li>
-                </ul>
+            <div class="nav-list">
+                <div class="first-nav">
+                    <ul>
+                        <li class="service"><a href="services.html">services</a></li>
+                        <li><a href="Solutions.html">Solutions</a></li>
+                        <li><a href="Industries.html">Industries</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="second-nav">
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="Application-develo.html">App Development</a></li>
+                        <li><a href="software-develo.html"> Software Development</a></li>
+                        <li><a href="">AI ML Development</a></li>
+                        <li><a href="">System Integration</a></li>
+                    </ul>
+                </div>
+                <span class="close">x</span>
             </div>
-            </div>
+            <span class="open">1</span>
+        </div>
+        </nav>
 
 
-        <div class="industries">
-        <div class="relation-main">
+        <div class="section">
+            <div class="industries">
 
-            <div class="cust-img">
-               <img class="C-relation" src="IMAGES/importance-cust-relationship.png" alt="cust-relationship"> 
-            </div>
-               <div >
                 <h3>Industries</h3>
-               <p>At Nigus Systems, we are dedicated to developing  cutting-edge technology solutions <br>that empower businesses across various industries. Our team of experts specializes  <br> in software development, digital platforms, and IT consulting services. <br>We harness the power of artificial intelligence, cloud computing, and data analytics<br> to create customized solutions that drive efficiency, productivity, and growth for our<br> clients.
-
-                 We provide a range of software solutions, applications, and system integrations<br> with business applications, offering numerous advantages as the software<br> extracts insights from various applications.
-                <ol>
+                <p>At Nigus Systems, we are dedicated to developing  cutting-edge technology solutions <br>that empower businesses across various industries. Our team of experts specializes  <br> in software development, digital platforms, and IT consulting services. <br>We harness the power of artificial intelligence, cloud computing, and data analytics<br> to create customized solutions that drive efficiency, productivity, and growth for our<br> clients.
+                  We provide a range of software solutions, applications, and system integrations<br> with business applications, offering numerous advantages as the software<br> extracts insights from various applications.
+                <ul>
                     <li>IT</li>
                     <li>ITeS</li>
                     <li>Manufacturing</li>
                     <li>Retail</li>
                     <li>Education</li>
-                </ol>
+                </ul>
                 </p>
                </div>
+               <img class="C-relation" src="IMAGES/importance-cust-relationship.png" alt="cust-relationship"> 
+
+                
             </div>
-        </div> 
         
-        <footer class="section">
-            <div class="footer">
+        <footer class="footer">
+
+            <div>
                 <a href="#"><img  class="logo1" src="IMAGES/nigus-logo.png"></a>
-                <h3>Nigus Systems Private Limited</h3>
-                <h4 class="help">We work across 24 x 7 to help you run your <br> business without any hassle.</h4>
-                <a href="https://in.linkedin.com/company/nigus-systems"><img class="icon" src="IMAGES/Linkedin-icon.png" alt="linked-in"></a>
-    
-                <h4 class="sub-partSecond">© 2024 Nigus Systems Pvt Ltd</h4>
-                 </footer>
+                <h3 class="limited">Nigus Systems Private Limited</h3>
+                <h4 class="help">We work across 24 x 7 to help you run your business without any hassle.</h4>
+                <a href="https://in.linkedin.com/company/nigus-systems"><img class="icon" src="IMAGES/Linkedin-icon.png"></a>
+        
+                <h4 class="limited">© 2024 Nigus Systems Pvt Ltd</h4>
+            </div>
+        
+            <div class="contact">
+                <button class="btn">sales</button>
+                <button class="btn">support</button>
+            </div>
+        
+        </footer>
+         
+        <script src="script.js"></script>
 </body>
 </html>
