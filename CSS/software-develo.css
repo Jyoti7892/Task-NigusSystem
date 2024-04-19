@@ -1,159 +1,141 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100% ;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
 }
 
-
-.section{
-    display: flex;
-    justify-content: space-around;
-    padding: 0% 11%;
+.section {
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 11%;
 }
-.sub-div{
-    width:50%;
+.sub-div {
+  width: 50%;
 }
-.sub-div h1{
-    font-size: 2.9rem;
-    padding: 1%;
+.sub-div h1 {
+  font-size: 2.9rem;
+  padding: 1%;
 }
-.sub-div p{
-    font-size: 1.3rem;
+.sub-div p {
+  font-size: 1.3rem;
 }
 
 .sub-div1 p {
-    padding: 3%;
-    text-align: center;
-    font-size: 1.3rem;
+  padding: 3%;
+  text-align: center;
+  font-size: 1.3rem;
 }
-img{
-    height: 30%;
-    width: 30%;
-}
-
-.section1
-{
-    padding: 20px;
+img {
+  height: 30%;
+  width: 30%;
 }
 
-.sub-div1 h3
-{
+.section1 {
+  padding: 20px;
+}
+
+.sub-div1 h3 {
   text-align: center;
   padding: 10px;
   font-size: 1.7rem;
 }
 
-.sub-div2
-{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-
+.sub-div2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
-.sub-div2 .box
-{
-    /* border: 1px solid red; */
+.sub-div2 .box {
+  /* border: 1px solid red; */
+  font-size: 1.3rem;
+  padding: 10px;
+  height: 70px;
+  width: 150px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 6px rgb(236, 234, 234);
+}
+.sub-div2 .box:hover {
+  transform: scale(1.2);
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+}
+.service-img {
+  width: 37%;
+  padding: 10%;
+}
+
+.service-para {
+  width: 70%;
+  padding: 10%;
+  font-size: 1.3rem;
+}
+.service-para h5 {
+  font-size: 1.4rem;
+}
+.section2 .service-para p {
+  color: dimgray;
+}
+
+@media screen and (max-width: 420px) {
+  .section {
+    display: block;
+  }
+  .sub-div h1 {
     font-size: 1.3rem;
-    padding: 10px;
-    height: 70px;
-    width: 150px;
-    border-radius: 4px;
-    box-shadow:3px 3px 3px 6px rgb(236, 234, 234);
+  }
+  .sub-div {
+    width: 99%;
+  }
+  .sub-div p {
+    font-size: 0.9rem;
+    padding: 1.4%;
+  }
+  img {
+    width: 81%;
+    text-align: center;
+    padding: 20px 10px;
+  }
 
-}
-.sub-div2 .box:hover{
-    transform: scale(1.2);
-}
+  .section1 {
+    padding: 4px;
+  }
+  .sub-div1 h3 {
+    padding: 2px;
+    font-size: 1.5rem;
+  }
+  .sub-div1 p {
+    padding: 3px;
+    font-size: 1rem;
+  }
+  .sub-div2 {
+    display: block;
+    padding: 5% 25%;
+  }
 
-.section2
-{
-    display: flex;
-    justify-content: space-between;
-}
-.service-img
-{
-    width: 37%;
+  .sub-div2 .box {
+    font-size: 0.8rem;
+    margin: -2px;
+    padding: 24px;
+    height: 71px;
+    width: 116px;
+    box-shadow: 1px 1px 1px 3px rgb(236, 234, 234);
+  }
+
+  .section2 {
+    display: block;
+  }
+  .service-img {
+    width: 95%;
     padding: 10%;
-}
-
-.service-para
-{
-    width: 70%;
-    padding: 10%;
+  }
+  .service-para h5 {
     font-size: 1.3rem;
-}
-.service-para h5{
-    font-size: 1.4rem;
-}
- .section2 .service-para  p{
-    color: dimgray;
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width:420px) {
-    .section{
-        display: block;
-    }
-    .sub-div h1 {
-        font-size: 1.3rem;
-    }
-    .sub-div {
-        width: 99%;
-    }
-    .sub-div p {
-        font-size: 0.9rem;
-        padding: 1.4%;
-    }
-    img {
-        width: 81%;
-        text-align: center;
-        padding: 20px 10px;
-    }
-    
-    .section1 {
-        padding: 4px;
-    }
-    .sub-div1 h3 {
-        padding: 2px;
-        font-size: 1.5rem;
-    }
-    .sub-div1 p {
-        padding: 3px;
-        font-size: 1rem;
-    }
-    .sub-div2 {
-        display: block;
-        padding: 5% 25%;
-    }
-
-    .sub-div2 .box {
-        font-size: 0.8rem;
-        margin: -2px;
-        padding: 24px;
-        height: 71px;
-        width: 116px;
-        box-shadow: 1px 1px 1px 3px rgb(236, 234, 234);
-    }
-
-    .section2 {
-        display: block;
-    }
-    .service-img {
-        width: 95%;
-        padding: 10%;
-    }
-    .service-para h5 {
-        font-size: 1.3rem;
-    }
-    .service-para {
-        width: 96%;
-        padding: 2%;
-        font-size: 1rem;
-    }
-
+  }
+  .service-para {
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+  }
 }

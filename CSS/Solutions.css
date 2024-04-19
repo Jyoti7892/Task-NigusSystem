@@ -1,134 +1,112 @@
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.section{
-    display: flex;
-    justify-content: space-evenly;
-    height: 700px;
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  height: 700px;
 }
-.heading img{
-    padding: 60px 80px;
+.heading img {
+  padding: 60px 80px;
 }
-.info{
-    width: 50%;
-    padding: 60px 80px;
-    font-size: 1.3rem;
+.info {
+  width: 50%;
+  padding: 60px 80px;
+  font-size: 1.3rem;
 }
-.info p{
-    color: dimgray;
-}
-
-.section2
-{
-    height: 110%;
-    display: flex;
-    justify-content: space-evenly;
-
-    
-}
-.div1{
-    /* border: 1px solid rgb(55, 0, 255); */
-    height: 80%;
-    width: 28%;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.3rem;
-    padding: 5%  0%;
-    color: dimgray;
-
-}
-.div1 img{
-    height: 25%;
-    width: 25%;
-
-}
-.div2{
-    font-size: 1.3rem;
-    height: inherit;
-    width: 40%;
-    padding: 5%  0%;
+.info p {
+  color: dimgray;
 }
 
-.div2 p{
-    color: dimgray;
+.section2 {
+  height: 110%;
+  display: flex;
+  justify-content: space-evenly;
 }
-.right1{
-    position: relative;
+.div1 {
+  /* border: 1px solid rgb(55, 0, 255); */
+  height: 80%;
+  width: 28%;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5% 0%;
+  color: dimgray;
+}
+.div1 img {
+  height: 25%;
+  width: 25%;
+}
+.div2 {
+  font-size: 1.3rem;
+  height: inherit;
+  width: 40%;
+  padding: 5% 0%;
+}
+
+.div2 p {
+  color: dimgray;
+}
+.right1 {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  font-size: 1.3rem;
+  padding: 0% 0% 3% 50%;
+  color: dimgray;
+}
+
+@media screen and (max-width: 425px) {
+  .section {
+    display: block;
+    height: 70%;
+  }
+
+  .section h1 {
+    font-size: 1.2rem;
+  }
+  .heading img {
+    padding: 20px 30px;
+  }
+  .info {
     width: 100%;
-    height: 10%;
-    font-size: 1.3rem;
-    padding: 0%  0% 3% 50%;
+    padding: 5px 5px;
+  }
+  .info p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .right {
+    position: absolute;
+  }
+
+  .section2 {
+    height: unset;
+    display: block;
+  }
+
+  .div1,
+  .div2 {
+    padding: 10px;
+    width: 100%;
+  }
+  .div1 h5 {
     color: dimgray;
+  }
+  .right1 {
+    padding: 10px;
+  }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:425px) {
-    .section{
-        display: block;
-        height: 70%;
-        }
-
-        .section h1
-        {
-            font-size: 1.2rem;
-        }
-        .heading img{
-            padding: 20px 30px;
-        }
-        .info {
-            width: 100%;
-            padding: 5px 5px;
-        }
-        .info p{
-            width: 100%;
-            font-size: 1rem;
-        }
-        .right{
-            position: absolute;
-            
-        }
-
-        .section2 {
-            height: unset;
-            display: block;
-        }
-
-        .div1, .div2 {
-           padding: 10px;
-            width: 100%;
-        }
-        .div1 h5
-        {
-            color: dimgray;
-        }
-        .right1{
-            padding: 10px;
-        }
-
-        h1{
-            font-size: 1.2rem;
-            text-align: center;
-        }
-        .div2 h2{
-                text-align: center;
-                font-size: 1.5rem;
-        }
-        p{
-            font-size: 1rem;
-    }
-
-
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .div2 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }

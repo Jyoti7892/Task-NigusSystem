@@ -1,95 +1,64 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.about-container{
-
-   text-align: center;
-   width: 95%;
-   padding: 20px;
-   font-size: 1.6rem;
-   font-weight: normal;
-   color:dimgray ;
-
+.about-container {
+  text-align: center;
+  width: 95%;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: dimgray;
 }
-.about-container p{
-    color: dimgray;
+.about-container p {
+  color: dimgray;
 }
-.first-div
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 30%;
-    padding: 6%;
-}
-.first-div .nigus-sys{
-    width: 20%;
-}
-.first-div .nigus-sys .first-block{
+.first-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
   padding: 20px;
 }
-.first-div .nigus-sys .overlay{
-    transform: scale(0);
-    text-align: center;
-    margin-top: -80%;
-    font-size: 1.4rem;
-}
-.first-div .nigus-sys .first-block:hover +.overlay
-{
-    background-color: rgb(59, 177, 43);
-    border-radius: 12px;
-    transform: scale(1);
-}
-
-.about-container1
-{
-    text-align: center;
-    font-size: 1.3rem;
-    color: white;
-    border-radius: 12px;
-    background-color: blue;
-}
-
-
-@media screen and (max-width:320px) {
-    .about-container {
-        text-align: center;
-        width: 96%;
-        padding: 3px;
-        font-size: 0.9rem;
-        color: dimgray;
-    }
-    .first-div{
-    display: block;
-    
-}
 .first-div .nigus-sys {
-    width: 99%;
-    padding: 17px;
+  width: fit-content;
+  text-align: center;
 }
-
 .first-div .nigus-sys .first-block {
-    padding: 34px;
+  padding: 20px;
 }
-.first-block img{
-    height: 180x;
-    width: 180px;
+.first-div .nigus-sys .overlay {
+  font-size: 1.4rem;
+  width: 350px;
+  /* height: 250px; */
 }
-.first-div .nigus-sys .overlay{
-    font-size: 1.2rem;
-}
+
 .about-container1 {
-    padding: 2px;
-    /* text-align: center; */
-    font-size: 0.7rem;
-    border-radius: 3px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 12px;
+  background-color: blue;
+}
+
+@media screen and (max-width: 426px) {
+  .about-container {
+    text-align: center;
+    width: 96%;
+    padding: 3px;
+    font-size: 0.9rem;
+    color: dimgray;
+  }
+  .first-div {
+    display: block;
+    /* height: 200px; */
+  }
+  .about-container1 {
+    text-align: center;
+    color: white;
     background-color: blue;
+  }
+  .about-container1 h1 {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 }
-}
-
-
-
-
-
-
-
