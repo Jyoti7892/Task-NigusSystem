@@ -16,6 +16,9 @@ body{
     padding: 60px 80px;
     font-size: 1.3rem;
 }
+.info p{
+    color: dimgray;
+}
 
 .section2
 {
@@ -33,6 +36,7 @@ body{
     text-align: center;
     font-size: 1.3rem;
     padding: 5%  0%;
+    color: dimgray;
 
 }
 .div1 img{
@@ -42,18 +46,21 @@ body{
 }
 .div2{
     font-size: 1.3rem;
-    /* border: 1px solid rgb(55, 0, 255); */
     height: inherit;
     width: 40%;
     padding: 5%  0%;
 }
+
+.div2 p{
+    color: dimgray;
+}
 .right1{
-    /* border: 1px solid rgb(55, 0, 255); */
     position: relative;
     width: 100%;
     height: 10%;
     font-size: 1.3rem;
     padding: 0%  0% 3% 50%;
+    color: dimgray;
 
 }
 
@@ -68,10 +75,10 @@ body{
 
 
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:425px) {
     .section{
         display: block;
-
+        height: 70%;
         }
 
         .section h1
@@ -103,11 +110,25 @@ body{
            padding: 10px;
             width: 100%;
         }
+        .div1 h5
+        {
+            color: dimgray;
+        }
         .right1{
             padding: 10px;
         }
 
-
+        h1{
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .div2 h2{
+                text-align: center;
+                font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+    }
 
 
 }

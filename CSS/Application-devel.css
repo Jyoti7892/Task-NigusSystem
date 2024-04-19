@@ -56,7 +56,7 @@ h3{
 
 
 
-@media (max-width : 490) {
+@media screen and (max-width : 425px) {
     
     .section
 {

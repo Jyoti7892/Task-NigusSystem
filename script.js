@@ -18,7 +18,6 @@ hover.addEventListener('click',()=>{
 })
 
 
-// const nav=document.querySelector('.first-nav')
 const nav=document.querySelector('.first-nav');
 const open=document.querySelector(".open");
 const close=document.querySelector(".close");
@@ -34,9 +33,3 @@ close.style.display="none";
 shownavbar.style.display="none";
 
 })
-
-// footer
-// const BTN=document.querySelector(".btn");
-// BTN.addEventListener("click",()=>{
-//     window.URL(ContactUs.html);
-// })

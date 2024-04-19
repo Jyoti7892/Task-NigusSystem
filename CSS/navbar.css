@@ -22,9 +22,9 @@ nav{
     padding: 5px 5px;
 }
 .navbar .logo{
-    width: 200px;
+    width: 150px;
     padding: 0 20px;
-    height: 90px;
+    height: 50px;
 }
 .navbar .logo img {
     width: 90%;
@@ -61,6 +61,7 @@ nav{
 }
 .nav-list ul li a:hover{
      color: rgb(0, 51, 255);
+     border-bottom:3px solid blue; ;
  }
  .first-nav ul li{
     padding: 10px 2px;
@@ -78,6 +79,151 @@ nav{
     display: block;
     font-size: 1.4rem;
  }
+
+.footer
+{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(115, 115, 163);
+}
+.limited{
+    color:dimgray ;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+.logo1
+{
+    height: 50px;
+    width: 100px;
+    padding: 20px;
+    padding: 5px;
+}
+
+.icon{
+    height: 30px;
+    width: 35px;
+    padding: 5px 0;
+    
+}
+.help
+{
+    padding:5px;
+    width: 60%;
+    color:dimgray ;
+    font-size: 1.1rem;
+    font-weight: normal;
+    
+}
+ .contact {
+    text-align: center;
+    margin: auto;
+}
+.btn{
+    height: 60px;
+    width: 100px;
+    box-shadow: 2px sandybrown;
+    background-color: blue;
+    border-radius: 4px;
+}
+
+
+
+
+
+@media screen and (max-width:721px) {
+.footer {
+    padding: 15px;
+    display: block;
+
+}
+.contact{
+    height: unset;
+    width: unset;
+    padding: 10px;
+
+}
+.contact button{
+height: 30px;
+width: 90px;
+margin: 5px;
+cursor: pointer;
+}
+}
+.footer
+{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    
+}
+.limited{
+    color:dimgray ;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+.logo1
+{
+    height: 50px;
+    width: 100px;
+    padding: 20px;
+    padding: 5px;
+}
+
+.icon{
+    height: 30px;
+    width: 35px;
+    padding: 5px 0;
+    
+}
+.help
+{
+    padding:5px;
+    width: 60%;
+    color:dimgray ;
+    font-size: 1.1rem;
+    font-weight: normal;
+    
+}
+.contact{
+    height: 400px;
+    width: 900px;
+   text-align: center;
+   padding: 10% 10%;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    box-shadow: 2px sandybrown;
+    background-color: rgb(56, 196, 198);
+    border-radius: 4px;
+}
+.btn:hover{
+
+    color: white;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width:721px) {
+.footer {
+    padding: 15px;
+    display: block;
+
+}
+.contact{
+    height: unset;
+    width: unset;
+    padding: 10px;
+
+}
+.contact button{
+height: 30px;
+width: 90px;
+margin: 5px;
+cursor: pointer;
+}
+}
+ 
 
 
  @media screen and (max-width:900px) {
@@ -126,73 +272,3 @@ nav{
 
 
 
-.footer
-{
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    
-}
-.limited{
-    color:dimgray ;
-    font-size: 1.5rem;
-    padding: 5px 0;
-}
-.logo1
-{
-    height: 50px;
-    width: 100px;
-    padding: 20px;
-    padding: 5px;
-}
-
-.icon{
-    height: 30px;
-    width: 35px;
-    padding: 5px 0;
-    
-}
-.help
-{
-    padding:5px;
-    width: 60%;
-    color:dimgray ;
-    font-size: 1.1rem;
-    font-weight: normal;
-    
-}
-.contact{
-    height: 400px;
-    width: 900px;
-   text-align: center;
-   padding: 10% 10%;
-    /* background-color: #39c596a2; */
-}
-.btn{
-    height: 60px;
-    width: 100px;
-    box-shadow: 2px sandybrown;
-    background-color: blue;
-    border-radius: 4px;
-}
-
-
-@media screen and (max-width:721px) {
-.footer {
-    padding: 15px;
-    display: block;
-
-}
-.contact{
-    height: unset;
-    width: unset;
-    padding: 10px;
-
-}
-.contact button{
-height: 30px;
-width: 90px;
-margin: 5px;
-cursor: pointer;
-}
-}
