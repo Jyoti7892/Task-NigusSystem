@@ -48,32 +48,48 @@ body {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .section {
     display: block;
   }
   .section .AI-solution h1 {
-    font-size: 1.5rem;
-    padding: 5px;
+    font-size: 1.8rem;
+    padding: 2.7px;
   }
   .section .AI-solution p {
     font-size: 0.9rem;
-    padding: 5.9px;
+    padding: 9.2px;
     font-weight: lighter;
   }
   .section img {
-    width: 97%;
+    width: 100%;
   }
   .section1 {
-    padding: 9px;
+    padding: 12px;
     display: block;
   }
+  global h4 {
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .global img {
+    width: 94%;
+  }
   .AI-solution1 {
-    width: 96%;
-    padding: 9px;
+    width: 100%;
+    padding: 22px;
+  }
+  .AI-solution1 h5 {
+    font-size: 1.5rem;
+    color: dimgray;
   }
   .AI-solution1 p {
     font-size: 0.9rem;
     font-weight: lighter;
+  }
+  footer {
+    padding: 21px;
+    display: block;
   }
 }
