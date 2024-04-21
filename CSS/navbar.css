@@ -5,12 +5,13 @@
 }
 
 body {
+ 
   max-width: 1440px;
   margin: auto;
 }
 
-nav {
-  padding: 10px 20px;
+ nav {
+  padding: 10px 0px 130px 20px;
   background: #fff;
   position: sticky;
   top: 0;
@@ -41,6 +42,7 @@ nav {
   background: #fff;
 }
 
+
 .navbar span {
   display: none;
 }
@@ -52,45 +54,79 @@ nav {
 .nav-list ul {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   list-style: none;
   padding-top: 10px;
-  padding-right: 10vw;
-  font-size: 1.5rem;
-  font-weight: 400;
+  padding-right:5vw;
+  font-size: 1.3rem;
+  font-weight: 500;
   height: 50px;
   background: #fff;
 }
+
 
 .nav-list ul li a {
   background: #fff;
   text-decoration: none;
   color: rgb(87, 102, 159);
-  transition: 0.5s;
-}
+  transition: 1s;
+} 
 
 .nav-list ul li a:hover {
   color: rgb(0, 51, 255);
   border-bottom: 3px solid blue;
+  border-top: 3px solid blue;
+  /* box-shadow: 0px 0px 0px 1px rgb(82, 80, 80); */
+  padding: 5px;
 }
 
+ 
 .first-nav ul li {
   padding: 10px 2px;
-}
+} 
 
+ 
 .second-nav {
-  display: none;
+  display: flex;
   position: absolute;
   height: inherit;
+ 
+  padding: 20px 1px 0px 0px;
+  border: 1px solid red;
+  
 }
-
 .second-nav ul li {
   background: #fff;
-  padding: 5px;
+  padding:  0px 30px 0px 40px;
   display: block;
-  font-size: 1.4rem;
+  
 }
+.service-open{
+  margin: 20px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,7 +137,7 @@ nav {
   height: fit-content;
   padding: 15px;
   display: flex;
-  background-color: rgb(115, 115, 163);
+ background-color: blanchedalmond;
 }
 
 .limited {
@@ -131,8 +167,10 @@ nav {
 
 .contact {
   text-align: center;
+
 }
-.info
+ 
+.contact .info
 {
   display: block;
   width: 114px;
@@ -140,29 +178,131 @@ nav {
   text-decoration: none;
   color: rgb(9, 9, 9);
   margin: 10px;
+  padding: 10px;
+
 
 }
-.btn {
-  height: 40px;
-  width: 100px;
-  background-color: rgb(56, 196, 198);
+.info1
+{
+  width: 114px;
   border-radius: 10px;
   text-decoration: none;
-  display: inline-block;
-  color: black;
+  color: rgb(9, 9, 9);
   padding: 10px;
-  margin: 8px;
-  text-align: center;
-}
-.btn:hover {
-  color: white;
-  background-color: blueviolet;
+
 }
 
+
+.contact .font-icon
+{
+ 
+  display: block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background-color:#fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all .03s ease-out;
+  
+}
+.contact .font-icon:hover
+{
+  width: 200px;
+  background-color: cadetblue;
+}
+.contact .font-icon .icon {
+display: inline-block;
+height: 60px;
+width: 60px;
+text-align: center;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 60px;
+}
+
+.contact .font-icon:nth-child(1) .icon 
+{
+background-color: #ea0d0d;
+}
+.contact .font-icon .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.contact .font-icon  span{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 10px;
+  text-align: center;
+
+}
+
+
+.contact .font-icon2
+{
+  display: block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background-color:#fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all .03s ease-out;
+}
+.contact .font-icon2:hover
+{
+  width: 200px;
+  background-color: cadetblue;
+}
+.contact .font-icon2 .icon {
+display: inline-block;
+height: 60px;
+width: 60px;
+text-align: center;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 60px;
+}
+.contact .font-icon2:nth-child(2) .icon
+{
+background-color: #ea0d0d;
+color: blue;
+}
+
+.contact .font-icon2 .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.contact .font-icon2  span{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 10px;
+  text-align: center;
+
+}
 
 
 
 @media screen and (max-width: 420px) {
+  nav {
+    padding: 10px 0px 9px 1px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
   .contact {
     height: fit-content;
     width: unset;
@@ -225,11 +365,26 @@ nav {
   .close {
     display: none;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     z-index: 2;
     transition: 0.5s;
   }
+
+
+  .navbar .service-open {
+    display: block;
+  }
+  
+.left
+{
+    display: none;
+    position: absolute;
+   
+    left: -9px;
+    z-index: 2;
+    transition: 0.5s;
+}
 
   .nav-list {
     position: relative;
@@ -248,9 +403,10 @@ nav {
     width: 100vw;
     transition: 0.5s;
   }
-
   .second-nav {
     position: absolute;
-    top: -34px;
-  }
+    top: -300px;
+    left: -100px;
+    width: 100vw;
+}
 }
