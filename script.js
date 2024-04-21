@@ -33,11 +33,13 @@ const open_service = document.querySelector(".service-open");
 const close_service = document.querySelector(".service-close");
 
 open_service.addEventListener("click", () => {
-  nav1.style.top = "-55px";
+  nav1.style.top = "-35px";
   close_service.style.display = "inline-block";
+  open_service.style.display="none";
 });
 
 close_service.addEventListener("click", () => {
   nav1.style.top= "-300px";
-  close_service.style.display = "none";
+  close_service.style.display = "none"
+  ;
 });
