@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -162,7 +162,7 @@ nav {
 
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 420px) {
   .contact {
     height: fit-content;
     width: unset;

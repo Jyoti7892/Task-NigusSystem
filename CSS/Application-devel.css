@@ -41,17 +41,33 @@ h3 {
 }
 
 @media screen and (max-width: 425px) {
+
   .section {
-    display: none;
-  }
-  .section img {
-    height: 20%;
-    width: 20%;
-  }
-  .sub-section1 h2 {
-    font-size: 1rem;
-  }
-  .sub-section1 p {
-    font-size: 0.5rem;
-  }
+    display: block;
+}
+.sub-section1 {
+  width: 96%;
+}
+.sub-section1 h2 {
+  font-size: 1.4rem;
+}
+.sub-section1 p {
+  font-size: 0.9rem;
+  color: dimgray;
+}
+.section img {
+  width: 83%;
+}
+h3 {
+  font-size: 1.4rem;
+  color: dimgray;
+}
+.section1 {
+  display: block;
+}
+.image {
+  height: 30%;
+  width: 84%;
+  padding: 5%;
+}
 }
