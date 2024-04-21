@@ -99,7 +99,7 @@ nav {
 .footer {
   width: 100%;
   height: fit-content;
-  padding: 5px;
+  padding: 15px;
   display: flex;
   background-color: rgb(115, 115, 163);
 }
@@ -112,8 +112,7 @@ nav {
 
 .logo1 {
   width: 100px;
-  height: 7 0px;
-  /* padding: 20px; */
+  height: 30px;
 }
 
 .icon {
@@ -133,7 +132,16 @@ nav {
 .contact {
   text-align: center;
 }
+.info
+{
+  display: block;
+  width: 114px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(9, 9, 9);
+  margin: 10px;
 
+}
 .btn {
   height: 40px;
   width: 100px;
@@ -150,16 +158,7 @@ nav {
   color: white;
   background-color: blueviolet;
 }
-.info
-{
-  display: block;
-  width: 114px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: rgb(9, 9, 9)  ;
-  margin: 10px;
 
-}
 
 
 
@@ -203,10 +202,10 @@ nav {
 }
 
 
- .footer {
-    padding: 15px;
-    display: block;
-  }
+.footer {
+  padding: 5px;
+  display: block;
+}
 
   .contact {
     height: unset;

@@ -22,6 +22,7 @@ h1 {
   perspective: 1000px;
   position: relative;
   border-radius: 15px;
+  margin: 20px;
 }
 .contact-img {
   padding: 10px;
@@ -52,14 +53,42 @@ h1 {
   transform: rotateY(180deg);
 }
 
+
+
 @media screen and (max-width: 425px) {
+  
   h1 {
     text-align: center;
-    font-size: 2rem;
-  }
+    font-size: 1.8rem;
+}
+container .cont-info {
+  margin-top: 40px;
+  width: 313px;
+  height: 242px;
+  border: 2px solid black;
+  padding: 4px;
+  text-align: center;
+  word-wrap: break-word;
+  transition: all 1.5s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: relative;
+  border-radius: 15px;
+  margin: 11px;
+}
 
-  .container {
-    display: block;
-    gap: 10px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

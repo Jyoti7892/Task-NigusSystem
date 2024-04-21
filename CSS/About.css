@@ -37,10 +37,13 @@ body {
   font-size: 1.3rem;
   color: white;
   border-radius: 12px;
+  margin: 10px;
   background-color: blue;
 }
 
-@media screen and (max-width: 426px) {
+
+
+@media screen and (max-width :425px) {
   .about-container {
     text-align: center;
     width: 96%;
@@ -55,10 +58,18 @@ body {
   .about-container1 {
     text-align: center;
     color: white;
+    margin: 11px;
     background-color: blue;
-  }
+}
+
   .about-container1 h1 {
     font-size: 1.3rem;
     padding: 10px;
   }
+.first-div .nigus-sys .overlay
+{
+  font-size: 0.9rem;
+    width: 309px;
 }
+}
+
