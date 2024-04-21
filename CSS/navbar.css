@@ -72,8 +72,6 @@ nav {
 .nav-list ul li a:hover {
   color: rgb(0, 51, 255);
  border-bottom:2px solid blue ;
-
-  
 }
 
 .first-nav ul li {
@@ -264,17 +262,16 @@ nav {
 
   .limited {
     color: rgb(28, 28, 28);
-    font-size: 1.5rem;
-    padding: 5px 0;
-  }
-
-  .help {
-    padding: 5px;
-    width: 60%;
-    color: #484848;
     font-size: 1.1rem;
+    padding: 2.8px 0;
+}
+ .help {
+    padding: 2px;
+    width: 40%;
+    color: #484848;
+    font-size: 0.9rem;
     font-weight: normal;
-  }
+}
   .btn {
     height: 40px;
     width: 200px;
@@ -355,7 +352,26 @@ nav {
   }
   .service-close{
     transform: rotate(90deg);
-    
-
   }
+
+  .logo1 {
+    width: 61px;
+    height: 27px;
+}
+.icon {
+  height: 39px;
+  width: 30px;
+  padding: 3px 0;
+}
+.contact {
+  height: unset;
+  width: unset;
+  padding: 0px;
+}
+.contact .info {
+  display: block;
+  text-decoration: none;
+  color: rgb(9, 9, 9);
+  padding: 6px;
+}
 }

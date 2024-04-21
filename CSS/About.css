@@ -43,7 +43,7 @@ body {
 
 
 
-@media screen and (max-width :425px) {
+@media screen and (max-width :768px) {
   .about-container {
     text-align: center;
     width: 96%;
@@ -63,7 +63,7 @@ body {
 }
 
   .about-container1 h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 10px;
   }
 .first-div .nigus-sys .overlay
