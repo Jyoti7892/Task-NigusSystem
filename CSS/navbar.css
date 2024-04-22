@@ -378,4 +378,10 @@ nav {
   color: rgb(9, 9, 9);
   padding: 6px;
 }
+.second-nav ul li {
+  background: #fff;
+  padding: 0px 30px 0px 40px;
+  display: block;
+  font-size: 0.9rem;
+}
 }
