@@ -1,16 +1,4 @@
-// const hover = document.querySelector(".service");
-// const shownavbar = document.querySelector(".second-nav");
 
-// let c = 1;
-// hover.addEventListener("click", () => {
-//   if (c === 1) {
-//     shownavbar.style.display = "flex";
-//     c--;
-//   } else {
-//     shownavbar.style.display = "none";
-//     c++;
-//   }
-// });
 
 const nav = document.querySelector(".first-nav");
 const open = document.querySelector(".open");

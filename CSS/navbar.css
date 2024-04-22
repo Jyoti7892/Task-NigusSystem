@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  padding: 10px 0px 70px 20px;
+  padding: 10px 0px 70px 10px;
   background: #fff;
   position: sticky;
   top: 0;
@@ -21,7 +21,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 4px;
+  padding: 2px 2px;
 }
 
 .navbar .logo {
@@ -142,6 +142,10 @@ nav {
   margin: 10px;
   padding: 10px;
 }
+.contact .info:hover{
+  font-weight: bold;
+}
+
 .info1 {
   width: 114px;
   border-radius: 10px;
