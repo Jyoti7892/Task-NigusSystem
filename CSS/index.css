@@ -17,6 +17,17 @@ body {
 .flex {
   display: flex;
 }
+
+@media screen and (max-width:426px) {
+
+  .flex{
+    display: block;
+    text-align: center;
+  }
+ .flex img{
+  width: 80% !important;
+ } 
+}
 .sub-section {
   padding: 5px 30px;
   font-size: 1.5rem;
