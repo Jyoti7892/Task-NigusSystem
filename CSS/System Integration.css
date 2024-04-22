@@ -56,7 +56,13 @@ body {
   height: 90px;
   width: 190px;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px 6px rgb(236, 234, 234);
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px 1px rgb(236, 234, 234);
+  transition: all 1s ease-in;
+}
+.sub-div2 .box:hover{
+  background-color: rgb(183, 255, 255);
+  transform: scale(1.1);
 }
 .sub-div2 .box p {
   text-align: center;

@@ -6,7 +6,7 @@ body {
 .section {
   display: flex;
   justify-content: space-around;
-  padding: 0% 11%;
+  padding: 0% 20px;
 }
 .sub-div {
   width: 50%;
@@ -52,6 +52,7 @@ img {
   width: 150px;
   border-radius: 4px;
   box-shadow: 3px 3px 3px 6px rgb(236, 234, 234);
+  transition: all 1s;
 }
 .sub-div2 .box:hover {
   transform: scale(1.2);

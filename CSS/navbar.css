@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::selection{
+  background-color: #abaaaa;
+  color: black;
+}
 body {
   max-width: 1440px;
   margin: auto;
@@ -82,7 +86,7 @@ nav {
   display: flex;
   position: absolute;
   height: inherit;
-  padding: 20px 1px 0px 0px;
+  padding: 6px 1px 0px 0px;
 }
 .second-nav ul li {
   background: #fff;
@@ -101,7 +105,11 @@ nav {
   height: fit-content;
   padding: 15px;
   display: flex;
+  justify-content: space-around;
 
+}
+.sun-footer{
+  padding: 20px;
 }
 
 .limited {
@@ -131,6 +139,7 @@ nav {
 
 .contact {
   text-align: center;
+  width: 37%;
 }
 
 .contact .info {
@@ -165,7 +174,7 @@ nav {
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.03s ease-out;
+  transition: width 1.5s ease-out;
 }
 .contact .font-icon:hover {
   width: 200px;
@@ -187,7 +196,7 @@ nav {
 .contact .font-icon .icon i {
   font-size: 25px;
   line-height: 60px;
-  transition: all 0.3s ease-out;
+  transition: all 0.9s ease-out;
 }
 
 .contact .font-icon span {
@@ -209,7 +218,7 @@ nav {
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.03s ease-out;
+  transition: width 1.5s ease-out;
 }
 .contact .font-icon2:hover {
   width: 200px;

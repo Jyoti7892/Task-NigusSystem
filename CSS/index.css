@@ -4,29 +4,34 @@ body {
 }
 
 /* -------Section---- */
-.section {
+.particle {
+  position: relative;
+  width: 95%;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+}
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px 60px;
-  /* background-color: rgb(171, 226, 226); */
 }
 .sub-section {
   padding: 5px 30px;
   font-size: 1.5rem;
-  width: 50%;
   color: dimgray;
 }
 .sub-section h1 {
   font-size: 2.9rem;
-  /* padding: 5px; */
 }
 .sub-section p {
   padding: 5px;
   font-weight: 500;
 }
-.section img {
-  width: 85%;
+#particles-js img {
+  padding: 10px;
+  width: 100%;
 }
 
 .Partners {
@@ -48,7 +53,14 @@ body {
   border-radius: 10px;
   background-color: rgba(134, 170, 200, 0.337);
   align-items: center;
+  transition: all 1s ease;
 }
+.box:hover
+{
+  background: rgb(196, 251, 255);
+    transform: translateY(-10px);
+}
+
 .box h3 {
   padding: 20px 0px;
 }
@@ -103,15 +115,53 @@ body {
   justify-content: space-evenly;
 }
 .box1 {
+  position: relative;
+  height: 250px;
+  width: 230px;
   text-align: center;
-  height: 330px;
-  width: 300px;
-  padding: 25px 15px;
-  box-shadow: -1px -1px 27px -11px gray;
   margin: 25px 15px;
+  /* border: 2px solid transparent; */
+  border-radius: 20px;
+  overflow: hidden;
 }
+.box1::before {
+  content: "";
+  position: absolute;
+  height: 155%;
+  width: 33%;
+  z-index: -1;
+  top: -36px;
+  left: 61px;
+  background:rgb(155 100 152 / 45%);
+  box-shadow: 0, 0, 20px rgb(8, 8, 8);
+  animation: box1-animate 4s linear infinite;
+}
+.box1::after {
+  content: "";
+  background-color:white;
+  position: absolute;
+  z-index: -1;
+  inset: 2px;
+  border-radius: 16px;
+}
+@keyframes box1-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .box1 img {
-  width: 70%;
+  width: 50%;
+  margin: 10px;
+
+  
+}
+.box1 label {
+  font-size: 1.2rem;
+
 }
 .box1 label {
   display: block;
@@ -119,32 +169,46 @@ body {
 .box1 h4 {
   color: dimgray;
 }
- .section .conf-call{
+.section .conf-call {
   width: 40%;
   margin: 20px;
 }
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section2 img {
+  width: 600px;
+}
 
 @media screen and (max-width: 768px) {
-  .section {
+  #particles-js {
+    width: 98%;
+    height: 8%;
     display: block;
-    padding: 10px;
+    padding: 7px 9px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   }
 
   .sub-section {
-    padding: 2.4px 1.5px;
-    width: 30%;
+    padding: 10px 9px;
+    width: 99%;
+    font-size: 0.4rem;
+    color: dimgray;
   }
+
   .sub-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1;
   }
   .sub-section p {
     padding: 1px;
     font-size: 0.9rem;
   }
-  .section img {
-    width: 85%;
-    padding-left: 10%;
+  #particles-js img {
+    width: 99%;
+    padding: 1%;
   }
   .section1 h1 {
     font-size: 1.2rem;
@@ -208,9 +272,16 @@ body {
   .solution p {
     font-size: 1.2rem;
   }
+  .section2 {
+    display: block;
+  }
+
+  .section2 img {
+    width: 247px;
+  }
 
   .section .conf-call {
     width: 76%;
     margin: 15px;
-}
+  }
 }
