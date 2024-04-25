@@ -16,12 +16,12 @@ close.addEventListener("click", () => {
 });
 
 
-const nav1 = document.querySelector(".second-nav");
+const nav1 = document.querySelector(".second-nav ul");
 const open_service = document.querySelector(".service-open");
 const close_service = document.querySelector(".service-close");
 
 open_service.addEventListener("click", () => {
-  nav1.style.top = "-35px";
+  nav1.style.top = "-34px";
   close_service.style.display = "inline-block";
   open_service.style.display="none";
 });

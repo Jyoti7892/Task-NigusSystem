@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-::selection{
+::selection {
   background-color: #abaaaa;
   color: black;
 }
@@ -19,32 +19,34 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 110px;
 }
-
-
-.navbar {
+.main
+{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.navbar {
   padding: 2px 2px;
+  height: 35px;
 }
 
 .navbar .logo {
   width: 150px;
-  padding: 0 20px;
+  padding: 10px 20px;
   height: 50px;
 }
 
 .navbar .logo img {
-  width: 90%;
+  width: 70%;
   height: inherit;
   transition: all 3s ease;
 }
-.navbar .logo img:hover{
+.navbar .logo img:hover {
   transform: rotateY(360deg);
-
 }
-
 
 .nav-list {
   width: 70vw;
@@ -65,10 +67,10 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 5vw;
   font-size: 1.1rem;
-  height: 50px;
+  height: 40px;
   background: #fff;
 }
 
@@ -83,11 +85,10 @@ nav {
 
 .nav-list ul li a:hover {
   color: rgb(0, 51, 255);
-
 }
-.nav-list ul li a::after{
+.nav-list ul li a::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background-color: rgb(164, 183, 249);
@@ -95,30 +96,79 @@ nav {
   left: 0;
   transition: 1s ease;
 }
-.nav-list ul li a:hover::after{
+.nav-list ul li a:hover::after {
   width: 100%;
 }
-
 
 .first-nav ul li {
   padding: 10px 2px;
 }
 
-.second-nav {
-  display: flex;
-  position: absolute;
+.main2
+{
+ /* border: 1px solid red;  */
+  height: 50px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+ .second-nav ul
+{ 
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
   height: inherit;
-  padding: 6px 1px 0px 0px;
+  padding: 6px 10px 0px 40px;
+
 }
-.second-nav ul li {
+ .second-nav ul li{
+  list-style: none;
   background: #fff;
-  padding: 0px 30px 0px 40px;
+  padding: 10px;
   display: block;
+  color: rgb(87, 102, 159);
+  font-weight: bold;
+  position: relative; 
 }
+.second-nav ul li a
+{
+  text-decoration: none;
+  padding: 30px;
+}
+.second-nav ul li a:hover
+{
+  color: rgb(0, 51, 255);
+} 
+.second-nav ul li a:hover
+{
+  transition: 2s ease;
+} 
+.second-nav ul li a::after
+{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: rgb(164, 183, 249);
+  bottom: 0;
+  left: 0;
+  transition: 2s ease;
+}
+.second-nav ul li a:hover::after
+{
+  width: 100%;
+}
+
 .service-open {
   margin: 20px;
   display: inline-block;
-}
+} 
+
+
+
+
+
 
 /* --------------footer----------------- */
 
@@ -128,9 +178,8 @@ nav {
   padding: 15px;
   display: flex;
   justify-content: space-around;
-
 }
-.sun-footer{
+.sun-footer {
   padding: 20px;
 }
 
@@ -173,7 +222,7 @@ nav {
   margin: 10px;
   padding: 10px;
 }
-.contact .info:hover{
+.contact .info:hover {
   font-weight: bold;
 }
 
@@ -253,13 +302,7 @@ nav {
   text-align: center;
   border-radius: 50px;
   box-sizing: border-box;
-  /* line-height: 60px; */
 }
-/* .contact .font-icon2:nth-child(2) .icon {
-  background-color: #ea0d0d;
-  color: blue;
-} */
-
 .contact .font-icon2 .icon i {
   font-size: 25px;
   line-height: 60px;
@@ -299,14 +342,14 @@ nav {
     color: rgb(28, 28, 28);
     font-size: 1.1rem;
     padding: 2.8px 0;
-}
- .help {
+  }
+  .help {
     padding: 2px;
     width: 40%;
     color: #484848;
     font-size: 0.9rem;
     font-weight: normal;
-}
+  }
   .btn {
     height: 40px;
     width: 200px;
@@ -345,17 +388,17 @@ nav {
     right: 0;
     z-index: 2;
     transition: 0.5s;
-}
+  }
 
   .navbar .service-open {
     display: block;
   }
 
-  .left{
+  .left {
     font-weight: 900;
     bottom: -95px;
     position: absolute;
-}
+  }
 
   .nav-list {
     position: relative;
@@ -374,45 +417,71 @@ nav {
     width: 100vw;
     transition: 0.5s;
   }
-  .second-nav {
-    position: absolute;
-    top: -300px;
-    left: -100px;
-    width: 100vw;
-    transition: 1s;
-  }
-  .service-open{
+  
+  .service-open {
     transform: rotate(90deg);
-    
   }
-  .service-close{
+  .service-close {
     transform: rotate(90deg);
   }
 
   .logo1 {
     width: 61px;
     height: 27px;
+  }
+  .icon {
+    height: 39px;
+    width: 30px;
+    padding: 3px 0;
+  }
+  .contact {
+    height: unset;
+    width: unset;
+    padding: 0px;
+  }
+  .contact .info {
+    display: block;
+    text-decoration: none;
+    color: rgb(9, 9, 9);
+    padding: 6px;
+  }
+  .second-nav ul li a {
+    text-decoration: none;
+    padding: 6px;
 }
-.icon {
-  height: 39px;
-  width: 30px;
-  padding: 3px 0;
+  .footer .linked {
+    background-color: #c1a0f5;
+    height: 24px;
+    width: 24px;
+    padding: 3px;
+    border-radius: 21%;
 }
-.contact {
-  height: unset;
-  width: unset;
-  padding: 0px;
+.main2 {
+  height: 30px;
+  
+  border-bottom: 1px solid rgb(202, 202, 202);
 }
-.contact .info {
+.second-nav ul {
   display: block;
-  text-decoration: none;
-  color: rgb(9, 9, 9);
-  padding: 6px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 570px;
+  padding: 9px 2px 9px 2px;
 }
-.second-nav ul li {
-  background: #fff;
-  padding: 0px 30px 0px 40px;
-  display: block;
-  font-size: 0.9rem;
 }
+
+
+.footer .linked{
+  background-color: #c1a0f5;
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+  border-radius: 20%;
+}
+.footer .linked i{
+  color: white;
+}
+.footer .linked:hover
+{
+  background-color: rgba(235, 14, 51, 0.941);
 }
